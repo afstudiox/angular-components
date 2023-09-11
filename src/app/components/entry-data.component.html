@@ -1,0 +1,19 @@
+<br>
+<p>Two Way Data Binding - 02 formas diferentes</p>
+<span>Username</span>
+<br>
+<input
+  type="text"
+  [value]="placeholder"
+  (input)="placeholder = $any($event.target).value"
+> 
+<span [style.color]="color">{{placeholder}}</span>
+
+<br>
+<span>Password</span>
+<br>
+<input 
+  type="text"
+  [(ngModel)]="placepassword"
+> 
+<span [style.color]="color">{{placepassword}}</span>

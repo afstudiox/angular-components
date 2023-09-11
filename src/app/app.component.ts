@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-components';
+  buttonLabel1: string = '[propriedade]=';
+  buttonLabel2: string = 'propriedade={{}}';
 }
